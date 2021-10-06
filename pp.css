@@ -1,0 +1,224 @@
+#p
+{
+background:white;
+width:100%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+}
+
+#block
+{
+width:70%;
+height:auto;
+background:none;
+margin:60px 0 0 0;
+}
+
+#container
+{
+background:white;
+width:100%;
+height:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+height:auto;
+margin-top:30px;
+}
+
+#photo
+{
+width:350px;
+height:350px;
+background:white;
+display:flex;
+text-align:center;
+align-items:center;
+justify-content:center;
+border-radius:5px;
+box-shadow:0px 0px 3px 0px gray;
+}
+
+#photo img
+{
+width:200px;
+height:200px;
+}
+
+#photo_desc
+{
+width:350px;
+height:350px;
+background:white;
+margin:10px;
+font-family:Calibri;
+padding:10px 10px 0px 10px;
+font-size:20px;
+font-weight:900;
+display:flex;
+flex-wrap:wrap;
+justify-content:left;
+align-items:start;
+}
+
+#info
+{
+background:white;
+width:100%;
+height:auto;
+font-size:15px;
+}
+
+#offers
+{
+width:350px;
+height:150px;
+background:white;
+transform: translate(0px, 150px);
+}
+
+#offers2
+{
+width:100%;
+height:auto;
+margin-top:50px;
+}
+
+#main_desc
+{
+width:100%;
+height:auto;
+background:none;
+margin-top:10px;
+font-family:Calibri;
+
+}
+
+#main_desc h3
+{
+font-family:Calibri;
+}
+
+#short_info
+{
+font-size:12px;
+margin:0px;
+flex-wrap:wrap;
+display:flex;
+}
+
+
+#big_addtocart
+{
+background:darkorange;
+padding:5px;
+text-align:center;
+border-radius:10px;
+margin:10px 0 0 15px;
+width:90%;
+height:50px;
+display:flex;
+text-align:center;
+align-items:center;
+justify-content:center;
+font-size:20px;
+}
+
+#pack_size
+{
+background:white;
+width:60%;
+height:45px;
+margin:10px 0 0 0px;
+display:flex;
+align-items:center;
+padding:0px 0px 0px 10px;
+border:solid 0px gray;
+border-radius:10px;
+box-shadow:0px 0px 2px 0px gray;
+}
+
+#label
+{
+background:white;
+width:auto;
+height:45px;
+margin:10px 10px 0 10px;
+font-size:30px;
+font-family:Calibri;
+font-weight:900;
+display:flex;
+align-items:center;
+justify-content:left;
+}
+
+#off
+{
+background:white;
+width:auto;
+height:20px;
+margin:0px 10px 0 10px;
+font-size:15px;
+font-family:Calibri;
+font-weight:900;
+}
+
+#combo
+{
+background:white;
+width:auto;
+height:100px;
+margin:10px 10px 0 10px;
+font-size:17px;
+font-family:Calibri;
+font-weight:900;
+display:flex;
+align-items:center;
+justify-content:left;
+box-shadow:0px 0px 1px 0px gray;
+}
+
+#combo img
+{
+width:90px;
+}
+
+#combo_label
+{
+border-top:solid 0.5px #3dbd99;
+background:none;
+width:auto;
+height:20px;
+margin:10px 10px 0 10px;
+font-size:17px;
+font-family:Calibri;
+font-weight:900;
+}
+
+
+@media only screen and (max-width: 430px) {
+  #pack_size
+{
+width:100%;
+}
+
+#big_addtocart
+{
+font-size:12px;
+}
+}
+
+
+@media only screen and (max-width: 430px) {
+#offers2
+{
+width:100%;
+height:auto;
+margin-top:70px;
+}
+
+}

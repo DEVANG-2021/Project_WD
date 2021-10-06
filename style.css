@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing :border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+#img1{
+    width: 90px;
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+    color :whitesmoke
+}
+
+/* ID */
+#active{
+  font-weight: bold;
+  color:#fc036b;
+  text-decoration: underline;
+   cursor:pointer;
+  font-size: 23px;
+}
+
+svg{
+    color:#fc036b;
+    width: 190px;
+
+}
+
+ li{
+    font-size: 22px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+/* General Sibling Selector (~)*/
+ h1 ~ ul{
+    list-style: none;
+}
+
+/* class */
+.nav-link{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-link li{
+    margin: 0 30px;
+   
+}
+
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: #fc036b;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+  
+background :rgb(82, 82, 146);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+.header-content{
+     
+    
+    margin-bottom: 155px;
+    color: whitesmoke;
+    text-align: center;
+}
+/* Adjacent Sibling Selector (+)*/
+.header-content + h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    background: #fc036b;
+    height: 4px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 6vmin;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background-color:#fc036b;
+    color: whitesmoke;
+    border-radius: 30px;
+    cursor:pointer;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 53px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    width:80%;
+    margin:80px auto;
+}
+
+.title{
+    text-align:center;
+    font-size:4vmin;
+}
+.row{
+    display:flex;
+    align-items:center;
+    width : 100%;
+    justify-content:space-between;
+}
+
+/* Descendant Selector (space)*/
+.row .col{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    width: 20px;
+    height: 18px;
+    
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    width: 20px;
+    height: 18px;
+  }
+  
+.fa-instagram {
+    background: #125688;
+    color: white;
+    width: 20px;
+    height: 18px;
+  }
+.bod{
+  
+    margin: 15px 20px;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 10px 18px #484872;   
+}
+
+.bod .col{
+   padding: 20px 0px;
+ 
+}
+.im{
+    width : 75%;
+   
+}
+
+body, html{
+    overflow-x : hidden;
+}
+.events .row{
+    margin-top: 50px;
+}
+h4{
+    margin : 20px auto;
+    color : #484872;
+    font-size: 3vmin;
+
+}
+
+hr{
+    width: 88%;
+}
+/* child selector (>) */
+.col > p{
+    color:#484872;
+ padding: 0px 40px;
+}
+.events .ctn{
+    margin-top:17px;
+}
+
+
+.content-col{
+    width : 75%;
+}
+
+.image-col{
+    width: 25%;
+}
+
+.tours .image-gallery{
+    margin-left: 18px;
+}
+
+.image-gallery img{
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.content-col .line{
+    margin-left:  -1px; 
+}
+
+.content-col h1{
+  color: #484872;
+  font-size: 6vmin;    
+}
+
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+
+.content-col .ctn{
+    margin-left: -6px;
+}
+
+.content-col{
+    text-align: justify;
+}
+
+.col{
+    text-align: justify;
+}
+
+.explore{
+    text-align: justify;
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    text-align: center;
+    background: #484872;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.footer p{
+    margin: 20px auto;
+    padding: 20px auto;
+    color: whitesmoke;
+}
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+
+    }
+    .nav-link{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background:#fc036b;
+        margin-top: -900;
+        transition: all 0.6s ease;
+
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 50px;
+       
+    }
+    .nav-link li{
+        margin: 20px auto;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 100%;
+    }
+    .explore-content{
+        width: 100%;
+        text-align: justify;
+    }
+    .tours .col{
+        width: 100%;
+    }
+    .image-gallery{
+        justify-content: center;
+        align-items: center;
+        margin-top: 33px;
+        margin-left: 18px;
+        
+    }
+
+    .content-col{
+        text-align: justify;
+    }
+
+    .col{
+        text-align: justify;
+    }
+
+    .image-gallery img{
+        
+        width: 100%;
+    }
+    .footer{
+        padding: 10px;
+        
+    }
+}
+img{
+    transition: transform 0.3s ease;
+}
+
+a:hover{
+    
+    color :#fc036b;
+   
+
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+.ctn:hover{
+    background: whitesmoke;
+    color:#fc036b;
+    box-shadow: 2px 2px 5px black;
+}
+
+li:hover{
+    color: #fc036b;
+    cursor: pointer;
+}
